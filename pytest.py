@@ -9,3 +9,14 @@ import socketserver
 
 # このパッケージが存在するかpythonコマンドで確認しに行きます。
 # pythonコマンドでこのソースをエラーなく実行できたためパッケージは正しく読み込まれてると思われます。一度コミットします。
+# コミットが完了したためこのまま実装します。
+
+PORT = 8000
+
+Handler = http.server.SimpleHTTPRequestHandler
+
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    print("serving at port",PORT)
+    httpd.serve_forever()
+
+# これで一時実装しに行きます。
