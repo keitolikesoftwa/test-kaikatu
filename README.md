@@ -6,3 +6,5 @@
 ```
 python pytest.py > pytest-log.txt
 ```
+
+Branch変更のやり方を忘れていたためgit公式ドキュメントを見ながら実行中です。
