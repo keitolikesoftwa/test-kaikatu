@@ -11,7 +11,7 @@ import socketserver
 # pythonコマンドでこのソースをエラーなく実行できたためパッケージは正しく読み込まれてると思われます。一度コミットします。
 # コミットが完了したためこのまま実装します。
 
-PORT = 8000
+PORT = 80
 
 Handler = http.server.SimpleHTTPRequestHandler
 
@@ -20,3 +20,5 @@ with socketserver.TCPServer(("", PORT), Handler) as httpd:
     httpd.serve_forever()
 
 # これで一時実装しに行きます。
+# サーバーの立ち上げは成功しサーバー実装したマシンからはhttpサーバの表示ができたが、スマホから接続できなかったため、実装に使った8000ポートに門で胃がある可能性が一番高いです。この8000番ポートを変更しながら使えるポートを探していきます。ファイヤーフォールは使えませんでした。
+
