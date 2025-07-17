@@ -7,4 +7,6 @@
 python pytest.py > pytest-log.txt
 ```
 
-Branch変更のやり方を忘れていたためgit公式ドキュメントを見ながら実行中です。
+Branch変更のやり方を忘れていたためgit公式ドキュメントを見ながら実行中です。  
+testBranchという名前で、ブランチ生成しtestBranchへの切り替えに成功しました。  
+コミット一回挟んで、マージします。    
